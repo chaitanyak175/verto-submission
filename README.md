@@ -25,12 +25,14 @@ A full-stack CRUD (Create, Read, Update, Delete) application built with Next.js 
 
 ```prisma
 model Employee {
-  id       Int    @id @default(autoincrement())
-  name     String
-  email    String @unique
-  position String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id         Int      @id @default(autoincrement())
+  name       String
+  email      String   @unique
+  position   String
+  department String
+  salary     Float
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
 
   @@map("employees")
 }
