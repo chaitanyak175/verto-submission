@@ -274,7 +274,7 @@ export default function DepartmentsPage() {
                             </div>
 
                             <div>
-                                <div className="text-sm font-medium text-gray-700 mb-2">
+                                <div className="text-sm font-medium text-gray-700 mb-2 dark:text-white">
                                     Recent Employees
                                 </div>
                                 <div className="space-y-2">
@@ -283,7 +283,7 @@ export default function DepartmentsPage() {
                                         .map((employee) => (
                                             <div
                                                 key={employee.id}
-                                                className="flex items-center justify-between p-2 bg-white border rounded"
+                                                className="flex items-center justify-between p-2 bg-white border rounded dark:text-black"
                                             >
                                                 <div>
                                                     <div className="font-medium text-sm">

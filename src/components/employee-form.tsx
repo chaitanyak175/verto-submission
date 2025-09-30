@@ -242,12 +242,11 @@ export default function EmployeeForm({
                         />
                     </div>
 
-                    {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row gap-3 pt-6 border-t">
                         <Button
                             type="submit"
                             disabled={isSubmitting || loading}
-                            className="flex-1 sm:flex-none sm:min-w-[140px]"
+                            className="flex-1 sm:flex-none sm:min-w-[140px] cursor-pointer"
                         >
                             {isSubmitting || loading ? (
                                 <>
